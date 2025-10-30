@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aditya Chavan - Freelance Software Tester specializing in performance testing, bug reporting, and regression testing. Based in Bagalkot, India.">
+    <meta name="author" content="Aditya Chavan">
+    <meta name="theme-color" content="#ec4899">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Aditya Chavan - Freelance Software Tester">
+    <meta property="og:description" content="Dynamic freelancer with expertise in performance testing and critical thinking. Skilled in test planning and regression testing.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adityachavan.dev">
+    <meta property="og:image" content="assets/images/profile.jpg">
+    
+    <title>Aditya Chavan - Freelance Software Tester | Portfolio</title>
+    
+    <!-- Critical CSS - Inlined for performance -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --pink-primary: #ec4899;
+            --pink-dark: #db2777;
+            --pink-light: #f9a8d4;
+            --pink-pale: #fce7f3;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        [data-theme="dark"] {
+            --text-dark: #f9fafb;
+            --text-light: #d1d5db;
+            --white: #1f2937;
+            --gray-50: #111827;
+            --gray-100: #1f2937;
+            --gray-800: #f3f4f6;
+            --gray-900: #f9fafb;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--white);
+            overflow-x: hidden;
+            transition: var(--transition);
+        }
+        
+        body.modal-open {
+            overflow: hidden;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--pink-primary) 0%, var(--pink-dark) 100%);
+            color: white;
+            min-height: 100vh;
+            min-height: 100svh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Aditya Chavan",
+      "jobTitle": "Freelance Software Tester",
+      "telephone": "+919972942264",
+      "email": "adityachavan6363@gmail.com",
+      "url": "https://adityachavan.dev",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bagalkot",
+        "addressCountry": "IN",
+        "postalCode": "587103"
+      },
+      "sameAs": [
+        "https://github.com/AdityaANKS"
+      ]
+    }
+    </script>
+</head>
+<body>
+    
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <span class="brand-name">Aditya Chavan</span>
+            </div>
+            
+            <button class="hamburger" 
+                    id="hamburger" 
+                    aria-label="Toggle navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nav-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="#hero" role="menuitem">Home</a></li>
+                <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#experience" role="menuitem">Experience</a></li>
+                <li role="none"><a href="#education" role="menuitem">Education</a></li>
+                <li role="none"><a href="#portfolio" role="menuitem">Portfolio</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+            </ul>
+            
+            <button class="theme-toggle" 
+                    id="theme-toggle" 
+                    aria-label="Toggle dark mode"
+                    title="Toggle dark mode">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+                    <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.66 15.66L14.24 14.24M5.76 5.76L4.34 4.34M15.66 4.34L14.24 5.76M5.76 14.24L4.34 15.66" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    
+    <main id="main-content">
+        
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-decoration"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="hello">Hello, I'm</span>
+                            <span class="name">Aditya Chavan</span>
+                        </h1>
+                        <p class="hero-subtitle">Freelance Software Tester</p>
+                        
+                        <div class="hero-location">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 0C5.243 0 3 2.243 3 5c0 3.188 4.5 10 5 11 .5-1 5-7.813 5-11 0-2.757-2.243-5-5-5zm0 7.5c-1.379 0-2.5-1.121-2.5-2.5S6.621 2.5 8 2.5s2.5 1.121 2.5 2.5S9.379 7.5 8 7.5z" fill="currentColor"/>
+                            </svg>
+                            Bagalkot, India 587103
+                        </div>
+                        
+                        <p class="hero-summary">
+                            Dynamic freelancer with a proven track record in performance testing and critical thinking. Successfully identified and reported bugs, enhancing software quality for previous clients. Skilled in test planning and regression testing, I leverage my problem-solving abilities to deliver robust solutions that meet client needs and exceed expectations.
+                        </p>
+                        
+                        <div class="hero-contact">
+                            <a href="tel:+919972942264" class="contact-link">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path d="M3.62 7.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V17c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+                                </svg>
+                                +91 9972942264
+                            </a>
+                            <a href="mailto:adityachavan6363@gmail.com" class="contact-link">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path d="M16 2H2C.9 2 0 2.9 0 4v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 4l-7 4.5L2 6V4l7 4.5L16 4v2z" fill="currentColor"/>
+                                </svg>
+                                adityachavan6363@gmail.com
+                            </a>
+                            <a href="https://github.com/AdityaANKS" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="contact-link"
+                               aria-label="Visit Aditya's GitHub profile (opens in new tab)">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C4.03 0 0 4.03 0 9c0 3.98 2.58 7.35 6.16 8.54.45.08.62-.19.62-.43 0-.21-.01-.77-.01-1.51-2.51.55-3.04-1.21-3.04-1.21-.41-1.04-1-1.32-1-1.32-.82-.56.06-.55.06-.55.91.06 1.39.93 1.39.93.8 1.38 2.11.98 2.62.75.08-.58.31-.98.57-1.2-2-.23-4.1-1-4.1-4.45 0-.98.35-1.79.93-2.42-.09-.23-.4-1.14.09-2.38 0 0 .76-.24 2.48.92.72-.2 1.49-.3 2.26-.3.77 0 1.54.1 2.26.3 1.72-1.16 2.48-.92 2.48-.92.49 1.24.18 2.15.09 2.38.58.63.93 1.44.93 2.42 0 3.46-2.1 4.22-4.11 4.44.32.28.61.83.61 1.67 0 1.2-.01 2.17-.01 2.47 0 .24.17.52.62.43C15.42 16.35 18 12.98 18 9c0-4.97-4.03-9-9-9z" fill="currentColor"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                        
+                        <div class="hero-cta">
+                            <a href="resume.pdf" download="Aditya_Chavan_Resume.pdf" class="btn btn-primary">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path d="M14 6h-3V1H7v5H4l5 5 5-5zM3 15v2h12v-2H3z" fill="currentColor"/>
+                                </svg>
+                                Download Resume (PDF)
+                            </a>
+                            <a href="resume.jpg" download="Aditya_Chavan_Resume.jpg" class="btn btn-secondary">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path d="M14 6h-3V1H7v5H4l5 5 5-5zM3 15v2h12v-2H3z" fill="currentColor"/>
+                                </svg>
+                                Download Resume (JPG)
+                            </a>
+                            <a href="#contact" class="btn btn-outline">Contact Me</a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="profile-image-wrapper">
+                            <img src="assets/images/profile.png" 
+                                 alt="Professional headshot of Aditya Chavan, Freelance Software Tester" 
+                                 class="profile-image"
+                                 width="300"
+                                 height="300">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Expertise in software testing and quality assurance</p>
+                
+                <div class="skills-grid">
+                    <!-- Skills will be dynamically generated by JavaScript -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Experience Section -->
+        <section class="section section-alt" id="experience">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">Professional journey and achievements</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Freelancer</h3>
+                                    <p class="timeline-company">Employer, Bagalkot</p>
+                                </div>
+                                <span class="timeline-date">January 2024 - 2025</span>
+                            </div>
+                            
+                            <button class="timeline-toggle" 
+                                    aria-expanded="false" 
+                                    aria-controls="exp-details-1"
+                                    data-toggle="experience">
+                                <span>Show details</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            
+                            <div class="timeline-details" id="exp-details-1">
+                                <ul>
+                                    <li>Identified and documented critical bugs across multiple client projects, improving software quality and user experience</li>
+                                    <li>Conducted comprehensive regression testing to ensure stability after updates and new feature deployments</li>
+                                    <li>Performed performance testing to optimize application speed and resource utilization</li>
+                                    <li>Collaborated with development teams to provide detailed bug reports and reproduction steps</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education Section -->
+        <section class="section" id="education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic background and qualifications</p>
+                
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M24 2L2 14l22 12 18-9.82V34h4V12L24 2zm0 23.48L7.72 14 24 4.52 40.28 14 24 25.48zM12 21.36v8.62c0 4.94 5.37 8.02 12 8.02s12-3.08 12-8.02v-8.62l-12 6.56-12-6.56z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="education-degree">High School Diploma in Computer Science</h3>
+                        <p class="education-institution">
+                            <a href="#" class="institution-link">Basaveshwara Veerashaiva Vidya Vardhak Sangha at Vidyagiri, Bagalkot</a>
+                        </p>
+                        <p class="education-date">Expected May 2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Languages Section -->
+        <section class="section section-alt" id="languages">
+            <div class="container">
+                <h2 class="section-title">Languages</h2>
+                <p class="section-subtitle">Proficiency in multiple languages</p>
+                
+                <div class="languages-grid">
+                    <div class="language-item" data-animate>
+                        <div class="language-header">
+                            <span class="language-name">English</span>
+                            <span class="language-percent">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="90"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="language-item" data-animate>
+                        <div class="language-header">
+                            <span class="language-name">Kannada</span>
+                            <span class="language-percent">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="100"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="language-item" data-animate>
+                        <div class="language-header">
+                            <span class="language-name">Hindi</span>
+                            <span class="language-percent">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="85"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio Section -->
+        <section class="section" id="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">Featured projects and testing samples</p>
+                
+                <div class="portfolio-filters" role="tablist" aria-label="Filter projects">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+                    <button class="filter-btn" data-filter="testing" role="tab" aria-selected="false">Testing</button>
+                    <button class="filter-btn" data-filter="automation" role="tab" aria-selected="false">Automation</button>
+                    <button class="filter-btn" data-filter="other" role="tab" aria-selected="false">Other</button>
+                </div>
+                
+                <div class="portfolio-grid" role="tabpanel">
+                    <!-- Portfolio items will be dynamically generated by JavaScript -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="section section-alt" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your testing needs</p>
+                
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+                                </svg>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <a href="tel:+919972942264">+91 9972942264</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                                </svg>
+                                <div>
+                                    <strong>Email</strong>
+                                    <a href="mailto:adityachavan6363@gmail.com">adityachavan6363@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                                </svg>
+                                <div>
+                                    <strong>Location</strong>
+                                    <span>Bagalkot, India 587103</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <!-- Honeypot field for spam prevention -->
+                        <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" 
+                                   id="name" 
+                                   name="name" 
+                                   required 
+                                   autocomplete="name"
+                                   aria-required="true">
+                            <span class="error-message" role="alert"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" 
+                                   id="email" 
+                                   name="email" 
+                                   required 
+                                   autocomplete="email"
+                                   aria-required="true">
+                            <span class="error-message" role="alert"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" 
+                                      name="message" 
+                                      rows="5" 
+                                      required
+                                      aria-required="true"></textarea>
+                            <span class="error-message" role="alert"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M1.01 1l16.98 8L1.01 17 1 11l12-2-12-2z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        
+                        <p class="form-note">
+                            Or email me directly at 
+                            <a href="mailto:adityachavan6363@gmail.com">adityachavan6363@gmail.com</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Aditya Chavan. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#hero">Back to top</a>
+                    <button id="print-resume" class="footer-link-btn">Print Resume</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container" role="status" aria-live="polite" aria-atomic="true"></div>
+    
+    <!-- Modal Container -->
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="modal-overlay" data-close-modal></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Modal Title</h3>
+                <button class="modal-close" data-close-modal aria-label="Close modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be injected here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js" defer></script>
+    
+    <!-- Analytics placeholder (privacy-friendly) -->
+    <!-- 
+    <script>
+        // Insert your privacy-friendly analytics here (e.g., Plausible, Fathom, Simple Analytics)
+        // Example: <script defer data-domain="adityachavan.dev" src="https://plausible.io/js/script.js"></script>
+    </script>
+    -->
+</body>
+</html>
