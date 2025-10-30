@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Thank You - Aditya S.C</title>
+    
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .thank-you-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--background-dark);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .thank-you-content {
+            max-width: 600px;
+            background: var(--card-bg);
+            padding: 4rem 3rem;
+            border-radius: var(--radius-xl);
+            border: 2px solid var(--primary-color);
+            box-shadow: var(--shadow-glow);
+            animation: fadeInScale 0.6s ease;
+        }
+        
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .success-animation {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: successPulse 2s ease-in-out infinite;
+        }
+        
+        .success-animation i {
+            font-size: 4rem;
+            color: #fff;
+            animation: checkmark 0.6s ease 0.3s both;
+        }
+        
+        @keyframes successPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(0, 217, 255, 0.7); }
+            50% { box-shadow: 0 0 0 30px rgba(0, 217, 255, 0); }
+        }
+        
+        @keyframes checkmark {
+            from {
+                transform: scale(0) rotate(0deg);
+            }
+            to {
+                transform: scale(1) rotate(360deg);
+            }
+        }
+        
+        .thank-you-content h1 {
+            font-size: 2.5rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .thank-you-content p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .response-time {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--background-light);
+            border-radius: var(--radius-md);
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .countdown {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 2rem;
+        }
+        
+        .countdown span {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-page">
+        <div class="thank-you-content">
+            <div class="success-animation">
+                <i class="fas fa-check"></i>
+            </div>
+            
+            <h1>Message Sent Successfully! 🎉</h1>
+            
+            <p>
+                Thank you for reaching out! Your message has been received and I'm excited to hear from you.
+                I'll review your inquiry and get back to you as soon as possible.
+            </p>
+            
+            <div class="response-time">
+                <i class="fas fa-clock"></i>
+                <span>Typical Response Time: 24 hours</span>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="./index.html" class="btn btn-primary">
+                    <i class="fas fa-home"></i> Back to Home
+                </a>
+                <a href="./index.html#projects" class="btn btn-secondary">
+                    <i class="fas fa-code"></i> View Projects
+                </a>
+            </div>
+            
+            <div class="countdown">
+                Redirecting to homepage in <span id="countdown">10</span> seconds...
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Auto-redirect countdown
+        let timeLeft = 10;
+        const countdownElement = document.getElementById('countdown');
+        
+        const countdown = setInterval(() => {
+            timeLeft--;
+            countdownElement.textContent = timeLeft;
+            
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                window.location.href = './index.html';
+            }
+        }, 1000);
+        
+        // Apply saved theme
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        if (currentTheme === 'light') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
+</body>
+</html>

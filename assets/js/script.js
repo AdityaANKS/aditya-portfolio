@@ -202,30 +202,128 @@ document.querySelectorAll('.timeline-item').forEach(item => {
 });
 
 // ===================================
-// CONTACT FORM
+// ENHANCED CONTACT FORM
 // ===================================
 
 const contactForm = document.getElementById('contactForm');
-const formSuccess = document.getElementById('formSuccess');
+const formSuccessInline = document.getElementById('formSuccessInline');
+const messageTextarea = document.getElementById('message');
+const charCount = document.getElementById('charCount');
+const submitButton = contactForm?.querySelector('.btn-submit');
 
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(contactForm);
-
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
-        })
-            .then(() => {
-                contactForm.style.display = "none";
-                formSuccess.style.display = "block";
-            })
-            .catch((error) => alert("Error: " + error));
+// Character counter for message field
+if (messageTextarea && charCount) {
+    messageTextarea.addEventListener('input', () => {
+        const currentLength = messageTextarea.value.length;
+        const maxLength = messageTextarea.getAttribute('maxlength');
+        
+        charCount.textContent = `${currentLength} / ${maxLength}`;
+        
+        // Warning states
+        charCount.classList.remove('warning', 'danger');
+        if (currentLength > maxLength * 0.8) {
+            charCount.classList.add('warning');
+        }
+        if (currentLength > maxLength * 0.95) {
+            charCount.classList.add('danger');
+        }
     });
 }
+
+// Form submission handling
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        // If using Netlify forms with redirect, let the default behavior happen
+        // The form will automatically redirect to thank-you.html
+        
+        // Add loading state to button
+        if (submitButton) {
+            submitButton.classList.add('loading');
+            submitButton.disabled = true;
+        }
+        
+        // Optional: Google Analytics event tracking
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'form_submission', {
+                'event_category': 'Contact',
+                'event_label': 'Portfolio Contact Form'
+            });
+        }
+        
+        // Optional: Console log for debugging
+        console.log('Form submitted successfully');
+        
+        // Note: If i want to use the inline success message instead of redirect,
+        // uncomment the code below and remove the action="/thank-you.html" from HTML
+        
+        /*
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(contactForm);
+        
+        // Validate honeypot
+        if (formData.get('bot-field')) {
+            console.log('Bot detected!');
+            return false;
+        }
+        
+        // Submit to Netlify
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString()
+        })
+        .then(() => {
+            // Hide form, show success message
+            contactForm.style.display = 'none';
+            formSuccessInline.classList.add('show');
+            
+            // Reset after 5 seconds
+            setTimeout(() => {
+                formSuccessInline.classList.remove('show');
+                contactForm.style.display = 'block';
+                contactForm.reset();
+                submitButton.classList.remove('loading');
+                submitButton.disabled = false;
+                if (charCount) charCount.textContent = '0 / 5000';
+            }, 5000);
+        })
+        .catch((error) => {
+            console.error('Form submission error:', error);
+            alert('Oops! Something went wrong. Please try again or email me directly.');
+            submitButton.classList.remove('loading');
+            submitButton.disabled = false;
+        });
+        */
+    });
+}
+
+// Email validation with better pattern
+function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+// Phone number formatting (optional enhancement)
+const phoneInput = document.getElementById('phone');
+if (phoneInput) {
+    phoneInput.addEventListener('input', (e) => {
+        let value = e.target.value.replace(/\D/g, '');
+        if (value.length > 10) value = value.substr(0, 10);
+        e.target.value = value;
+    });
+}
+
+// Real-time validation feedback
+const inputs = contactForm?.querySelectorAll('input[required], textarea[required]');
+inputs?.forEach(input => {
+    input.addEventListener('blur', () => {
+        if (input.value.trim() === '') {
+            input.style.borderColor = 'var(--border-color)';
+        }
+    });
+});
 
 // ===================================
 // BACK TO TOP BUTTON
