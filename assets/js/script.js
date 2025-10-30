@@ -208,41 +208,24 @@ document.querySelectorAll('.timeline-item').forEach(item => {
 const contactForm = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    // Basic validation
-    if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
-        alert('Please fill in all fields');
-        return;
-    }
-    
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert('Please enter a valid email address');
-        return;
-    }
-    
-    // Simulate form submission
-    console.log('Form submitted:', { name, email, message });
-    
-    // Hide form and show success message
-    contactForm.style.display = 'none';
-    formSuccess.classList.add('show');
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-        formSuccess.classList.remove('show');
-        contactForm.style.display = 'block';
-        contactForm.reset();
-    }, 5000);
-});
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(contactForm);
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+            .then(() => {
+                contactForm.style.display = "none";
+                formSuccess.style.display = "block";
+            })
+            .catch((error) => alert("Error: " + error));
+    });
+}
 
 // ===================================
 // BACK TO TOP BUTTON

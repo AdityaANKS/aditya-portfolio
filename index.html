@@ -520,10 +520,7 @@
             <div class="contact-container">
     <!-- Contact Form -->
     <div class="contact-form-wrapper">
-        <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true">
-            <!-- Netlify hidden input -->
-            <input type="hidden" name="form-name" value="contact">
-
+        <form class="contact-form" id="contactForm" name="contact" method="POST" netlify>
             <div class="form-group">
                 <label for="name">
                     <i class="fas fa-user"></i> Your Name
@@ -548,26 +545,18 @@
             <button type="submit" class="btn btn-primary btn-submit">
                 <i class="fas fa-paper-plane"></i> Send Message
             </button>
+
+            <!-- Hidden input (required by Netlify to register the form) -->
+            <input type="hidden" name="form-name" value="contact">
         </form>
 
-        <!-- Success message -->
-        <div id="formSuccess" class="form-success">
+        <!-- Optional: Success message (hidden by default) -->
+        <div id="formSuccess" class="form-success" style="display: none;">
             <h3>Message Sent Successfully!</h3>
             <p>Thank you for reaching out. I'll get back to you soon.</p>
         </div>
 
-
-
-                    <!-- Success Message -->
-                    <div class="form-success" id="formSuccess">
-                        <div class="success-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <h3>Message Sent Successfully!</h3>
-                        <p>Thank you for reaching out. I'll get back to you soon.</p>
-                    </div>
-                </div>
-
+        
                 <!-- Contact Info -->
                 <div class="contact-info">
                     <div class="info-card">
