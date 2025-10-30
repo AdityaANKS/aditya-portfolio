@@ -3,345 +3,643 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aditya S.C. – performance testing freelancer based in Bagalkot, India. Skilled in bug reporting, regression testing, performance analysis and test planning.">
+    <meta name="description" content="Aditya S.C - Creative Developer & Tech Enthusiast. Explore my projects, skills, and experience.">
+    <meta name="author" content="Aditya S.C">
+    <meta name="theme-color" content="#0a192f">
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="Aditya S.C. – Freelance Software Tester & Developer">
-    <meta property="og:description" content="Dynamic freelancer with expertise in performance testing, bug reporting, and quality assurance.">
-    <meta property="og:image" content="https://yourdomain.com/assets/profile.jpg">
-    <meta property="og:type" content="website">
+    <title>Aditya S.C | Developer Portfolio</title>
     
-    <title>Aditya S.C. – Freelance Software Tester & Developer</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.png" type="image/png">
     
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Aditya S.C.",
-      "jobTitle": "Freelance Software Tester",
-      "telephone": "+919972942264",
-      "email": "adityachavan6363@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bagalkot",
-        "addressCountry": "India",
-        "postalCode": "587103"
-      },
-      "sameAs": [
-        "https://github.com/AdityaANKS"
-      ]
-    }
-    </script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Dark Mode Toggle -->
-    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
-        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-    </button>
+    
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">A</div>
+            <p class="preloader-text">Welcome to Aditya's Portfolio</p>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
 
     <!-- Navigation -->
-    <nav id="mainNav" class="main-nav">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">Aditya S.C.</a>
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">Aditya<span class="highlight">.SC</span></span>
+            </a>
+            
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#hero" class="nav-link active">Home</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#languages" class="nav-link">Languages</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
             </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <div class="hero-background">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-            </div>
-            <div class="container hero-container">
-                <div class="hero-content fade-in">
-                    <img src="assets/profile.png" alt="Aditya S.C. profile photo" class="profile-photo" loading="eager">
-                    <h1 class="hero-title">Aditya S.C.</h1>
-                    <p class="hero-location">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                        Bagalkot, India 587103
+    <!-- Home Section -->
+    <section class="section home-section" id="home">
+        <div class="animated-bg">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        
+        <div class="container home-container">
+            <div class="home-content">
+                <div class="home-text">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="hero-title">Aditya S.C</h1>
+                    <div class="typing-container">
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        A passionate developer and creative thinker who transforms ideas into elegant digital solutions. 
+                        I build innovative web applications with clean code and modern technologies.
                     </p>
-                    
-                    <div class="hero-contact">
-                        <a href="tel:+919972942264" class="contact-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                            +91 9972942264
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-code"></i> View My Projects
                         </a>
-                        <a href="mailto:adityachavan6363@gmail.com" class="contact-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            adityachavan6363@gmail.com
-                        </a>
-                        <a href="https://github.com/AdityaANKS" target="_blank" rel="noopener noreferrer" class="contact-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                            GitHub
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Contact Me
                         </a>
                     </div>
-
-                    <div class="hero-cta">
-                        <button id="openResumeModal" class="btn btn-primary">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                <polyline points="7 10 12 15 17 10"></polyline>
-                                <line x1="12" y1="15" x2="12" y2="3"></line>
-                            </svg>
-                            Download Resume (PDF)
-                        </button>
-                        <button id="openResumeModalJPG" class="btn btn-secondary">
-                            Download Resume (JPG)
-                        </button>
+                </div>
+                
+                <div class="home-image">
+                    <div class="image-container">
+                        <div class="image-glow"></div>
+                        <img src="./assets/images/profile.png" alt="Aditya S.C" class="profile-img">
+                        <div class="image-border"></div>
                     </div>
-
-                    <p class="hero-summary">
-                        Dynamic freelancer with a proven track record in performance testing and critical thinking. Successfully identified and reported bugs, enhancing software quality for previous clients. Skilled in test planning and regression testing, I leverage my problem-solving abilities to deliver robust solutions that meet client needs and exceed expectations.
-                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+        
+        <div class="scroll-indicator">
+            <a href="#skills">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a>
+        </div>
+    </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills section">
-            <div class="container">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="skills-grid" id="skillsGrid">
-                    <!-- Skills populated by JavaScript -->
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Card 1 -->
+                <div class="skill-card" data-skill="HTML5">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-name">HTML5</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="95"></div>
+                    </div>
+                    <p class="skill-description">Building semantic, accessible web structures with modern HTML standards.</p>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="skill-card" data-skill="CSS3">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 class="skill-name">CSS3</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                    <p class="skill-description">Creating responsive, animated designs with advanced CSS techniques.</p>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="skill-card" data-skill="JavaScript">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="88"></div>
+                    </div>
+                    <p class="skill-description">Developing dynamic, interactive web applications with vanilla JS and ES6+.</p>
+                </div>
+
+                <!-- Skill Card 4 -->
+                <div class="skill-card" data-skill="React">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="skill-name">React</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="85"></div>
+                    </div>
+                    <p class="skill-description">Building scalable single-page applications with React hooks and components.</p>
+                </div>
+
+                <!-- Skill Card 5 -->
+                <div class="skill-card" data-skill="Node.js">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="skill-name">Node.js</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="82"></div>
+                    </div>
+                    <p class="skill-description">Creating robust backend services and RESTful APIs with Node.js.</p>
+                </div>
+
+                <!-- Skill Card 6 -->
+                <div class="skill-card" data-skill="Python">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="80"></div>
+                    </div>
+                    <p class="skill-description">Developing automation scripts, data analysis tools, and backend applications.</p>
+                </div>
+
+                <!-- Skill Card 7 -->
+                <div class="skill-card" data-skill="Git">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3 class="skill-name">Git & GitHub</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="87"></div>
+                    </div>
+                    <p class="skill-description">Version control and collaborative development using Git workflows.</p>
+                </div>
+
+                <!-- Skill Card 8 -->
+                <div class="skill-card" data-skill="Database">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-name">Databases</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="78"></div>
+                    </div>
+                    <p class="skill-description">Working with MongoDB, MySQL, and Firebase for data management.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="experience section">
-            <div class="container">
-                <h2 class="section-title">Work Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <button 
-                                class="experience-header" 
-                                id="exp-toggle-1"
-                                aria-expanded="false" 
-                                aria-controls="exp-details-1"
-                            >
-                                <div class="experience-title-group">
-                                    <h3 class="experience-role">Freelancer</h3>
-                                    <p class="experience-company">Employer, Bagalkot</p>
-                                </div>
-                                <div class="experience-meta">
-                                    <span class="experience-date">January 2024 – 2025</span>
-                                    <svg class="expand-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"></polyline>
-                                    </svg>
-                                </div>
-                            </button>
-                            <div class="experience-details" id="exp-details-1" aria-hidden="true">
-                                <ul>
-                                    <li>Identified and reported software bugs to improve product quality and user experience</li>
-                                    <li>Led regression testing cycles ensuring stability across software releases</li>
-                                    <li>Conducted performance testing for key modules, optimizing system efficiency</li>
-                                    <li>Designed comprehensive test plans for new features and integrations</li>
-                                    <li>Collaborated with development teams to resolve critical issues promptly</li>
-                                </ul>
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work and creations</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/AdityaANKS" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
                             </div>
                         </div>
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <h3 class="project-title">Full Stack Web Application</h3>
+                        <p class="project-description">
+                            A comprehensive web application built with the MERN stack, featuring user authentication, 
+                            real-time data updates, and responsive design.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/AdityaANKS" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                        <h3 class="project-title">Interactive Dashboard</h3>
+                        <p class="project-description">
+                            A dynamic dashboard with data visualization, chart integration, and smooth animations 
+                            for monitoring and analytics.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/AdityaANKS" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Flask</span>
+                        </div>
+                        <h3 class="project-title">Machine Learning Model</h3>
+                        <p class="project-description">
+                            An intelligent prediction system using machine learning algorithms with a Flask-based 
+                            web interface for user interaction.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/AdityaANKS" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop" alt="Project 4">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Mobile</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <h3 class="project-title">Mobile Application</h3>
+                        <p class="project-description">
+                            Cross-platform mobile app with real-time synchronization, push notifications, 
+                            and seamless user experience.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/AdityaANKS" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" alt="Project 5">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TailwindCSS</span>
+                        </div>
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p class="project-description">
+                            Modern e-commerce solution with shopping cart, payment integration, admin dashboard, 
+                            and inventory management.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/AdityaANKS" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600&h=400&fit=crop" alt="Project 6">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3 class="project-title">Creative Portfolio Template</h3>
+                        <p class="project-description">
+                            A stunning portfolio template with smooth animations, dark mode toggle, 
+                            and fully responsive design for creative professionals.
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Languages Section -->
-        <section id="languages" class="languages section">
-            <div class="container">
-                <h2 class="section-title">Languages</h2>
-                <div class="languages-grid" id="languagesGrid">
-                    <!-- Languages populated by JavaScript -->
+            <div class="view-more">
+                <a href="https://github.com/AdityaANKS" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> View More on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey and achievements</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Experience Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Present</div>
+                        <h3 class="timeline-title">Full Stack Developer</h3>
+                        <h4 class="timeline-company">Tech Innovations Inc.</h4>
+                        <p class="timeline-description">
+                            Leading development of scalable web applications using React, Node.js, and cloud technologies. 
+                            Implemented CI/CD pipelines and improved application performance by 40%.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <h3 class="timeline-title">Frontend Developer Intern</h3>
+                        <h4 class="timeline-company">Digital Solutions Lab</h4>
+                        <p class="timeline-description">
+                            Developed responsive user interfaces and interactive components for client projects. 
+                            Collaborated with design team to implement pixel-perfect designs and animations.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2022</div>
+                        <h3 class="timeline-title">Python Developer</h3>
+                        <h4 class="timeline-company">Data Analytics Corp</h4>
+                        <p class="timeline-description">
+                            Built automation tools and data processing scripts using Python. Developed RESTful APIs 
+                            and integrated machine learning models for predictive analytics.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2021</div>
+                        <h3 class="timeline-title">Freelance Web Developer</h3>
+                        <h4 class="timeline-company">Self-Employed</h4>
+                        <p class="timeline-description">
+                            Created custom websites for small businesses and startups. Managed full project lifecycle 
+                            from requirements gathering to deployment and maintenance.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">WordPress</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SEO</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio section">
-            <div class="container">
-                <h2 class="section-title">Portfolio & Projects</h2>
-                
-                <div class="portfolio-filters">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="testing">Testing</button>
-                    <button class="filter-btn" data-filter="automation">Automation</button>
-                    <button class="filter-btn" data-filter="other">Other</button>
-                </div>
-
-                <div class="portfolio-grid" id="portfolioGrid">
-                    <!-- Projects populated by JavaScript -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact section">
-            <div class="container">
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
                 <h2 class="section-title">Get In Touch</h2>
-                
-                <div class="contact-wrapper">
-                    <div class="contact-info">
-                        <h3>Contact Information</h3>
-                        <div class="contact-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                            <a href="tel:+919972942264">+91 9972942264</a>
+                <p class="section-subtitle">Let's work together on your next project</p>
+            </div>
+
+            <div class="contact-container">
+    <!-- Contact Form -->
+    <div class="contact-form-wrapper">
+        <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true">
+            <!-- Netlify hidden input -->
+            <input type="hidden" name="form-name" value="contact">
+
+            <div class="form-group">
+                <label for="name">
+                    <i class="fas fa-user"></i> Your Name
+                </label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+                <label for="email">
+                    <i class="fas fa-envelope"></i> Your Email
+                </label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="message">
+                    <i class="fas fa-comment-dots"></i> Your Message
+                </label>
+                <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+                <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+        </form>
+
+        <!-- Success message -->
+        <div id="formSuccess" class="form-success">
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. I'll get back to you soon.</p>
+        </div>
+
+
+
+                    <!-- Success Message -->
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
                         </div>
-                        <div class="contact-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            <a href="mailto:adityachavan6363@gmail.com">adityachavan6363@gmail.com</a>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for reaching out. I'll get back to you soon.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="contact-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                            <a href="https://github.com/AdityaANKS" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
-                        </div>
+                        <h3>Email</h3>
+                        <a href="mailto:adityachavan6363@gmail.com">adityachavan6363@gmail.com</a>
                     </div>
 
-                    <form id="contactForm" class="contact-form" novalidate>
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                            <span class="error-message" id="nameError"></span>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                            <span class="error-message" id="emailError"></span>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            <span class="error-message" id="messageError"></span>
-                        </div>
+                        <h3>Phone</h3>
+                        <a href="tel:+919972942264">+91 99729 42264</a>
+                    </div>
 
-                        <!-- Honeypot field -->
-                        <input type="text" name="website" id="website" class="honeypot" tabindex="-1" autocomplete="off">
-                        
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                        
-                        <div class="form-message" id="formMessage"></div>
-                    </form>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/AdityaANKS" target="_blank">@AdityaANKS</a>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-file-download"></i>
+                        </div>
+                        <h3>Resume</h3>
+                        <a href="./assets/resume.pdf" download class="download-resume">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/AdityaANKS" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/ivanchat" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/aditya_s_c_26" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-container">
-            <p>&copy; 2025 Aditya S.C. All rights reserved.</p>
-            <a href="https://github.com/AdityaANKS" target="_blank" rel="noopener noreferrer" class="footer-github">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-            </a>
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Designed & Developed by <span class="highlight">Aditya S.C</span>
+                </p>
+                <p class="footer-copyright">
+                    &copy; 2024 Aditya S.C. All rights reserved.
+                </p>
+            </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top" aria-label="Back to top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="18 15 12 9 6 15"></polyline>
-        </svg>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Resume Modal -->
-    <div id="resumeModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle" aria-hidden="true">
-        <div class="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="modal-close" id="closeResumeModal" aria-label="Close resume modal">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </button>
-            <h2 id="resumeModalTitle">Resume</h2>
-            <div class="resume-preview">
-                <img src="assets/resume.jpg" alt="Resume preview" loading="lazy">
-            </div>
-            <div class="modal-actions">
-                <a href="assets/resume.pdf" download="Aditya_SC_Resume.pdf" class="btn btn-primary">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
-                    Download PDF
-                </a>
-                <a href="assets/resume.jpg" download="Aditya_SC_Resume.jpg" class="btn btn-secondary">
-                    Download JPG
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Project Modal -->
-    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle" aria-hidden="true">
-        <div class="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="modal-close" id="closeProjectModal" aria-label="Close project modal">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </button>
-            <div id="projectModalContent">
-                <!-- Content populated by JavaScript -->
-            </div>
-        </div>
-    </div>
-
-    <script src="js/main.js" defer></script>
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
