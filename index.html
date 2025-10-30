@@ -3,504 +3,544 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aditya Chavan - Freelance Software Tester specializing in performance testing, bug reporting, and regression testing. Based in Bagalkot, India.">
-    <meta name="author" content="Aditya Chavan">
-    <meta name="theme-color" content="#ec4899">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Aditya Chavan - Freelance Software Tester">
-    <meta property="og:description" content="Dynamic freelancer with expertise in performance testing and critical thinking. Skilled in test planning and regression testing.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://adityachavan.dev">
-    <meta property="og:image" content="assets/images/profile.jpg">
-    
-    <title>Aditya Chavan - Freelance Software Tester | Portfolio</title>
-    
-    <!-- Critical CSS - Inlined for performance -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        :root {
-            --pink-primary: #ec4899;
-            --pink-dark: #db2777;
-            --pink-light: #f9a8d4;
-            --pink-pale: #fce7f3;
-            --text-dark: #1f2937;
-            --text-light: #6b7280;
-            --white: #ffffff;
-            --gray-50: #f9fafb;
-            --gray-100: #f3f4f6;
-            --gray-800: #1f2937;
-            --gray-900: #111827;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        [data-theme="dark"] {
-            --text-dark: #f9fafb;
-            --text-light: #d1d5db;
-            --white: #1f2937;
-            --gray-50: #111827;
-            --gray-100: #1f2937;
-            --gray-800: #f3f4f6;
-            --gray-900: #f9fafb;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            background: var(--white);
-            overflow-x: hidden;
-            transition: var(--transition);
-        }
-        
-        body.modal-open {
-            overflow: hidden;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, var(--pink-primary) 0%, var(--pink-dark) 100%);
-            color: white;
-            min-height: 100vh;
-            min-height: 100svh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-    </style>
-    
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Aditya Chavan",
-      "jobTitle": "Freelance Software Tester",
-      "telephone": "+919972942264",
-      "email": "adityachavan6363@gmail.com",
-      "url": "https://adityachavan.dev",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bagalkot",
-        "addressCountry": "IN",
-        "postalCode": "587103"
-      },
-      "sameAs": [
-        "https://github.com/AdityaANKS"
-      ]
-    }
-    </script>
+    <meta name="description" content="Aditya S.C. - Aspiring Developer | Personal Portfolio showcasing skills, projects, and experience">
+    <meta name="author" content="Aditya S.C.">
+    <title>Aditya S.C. | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-    
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
         <div class="container nav-container">
-            <div class="nav-brand">
-                <span class="brand-name">Aditya Chavan</span>
-            </div>
+            <a href="#home" class="logo">Aditya<span class="highlight">S.C.</span></a>
             
-            <button class="hamburger" 
-                    id="hamburger" 
-                    aria-label="Toggle navigation menu"
-                    aria-expanded="false"
-                    aria-controls="nav-menu">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
             
-            <ul class="nav-menu" id="nav-menu" role="menubar">
-                <li role="none"><a href="#hero" role="menuitem">Home</a></li>
-                <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
-                <li role="none"><a href="#experience" role="menuitem">Experience</a></li>
-                <li role="none"><a href="#education" role="menuitem">Education</a></li>
-                <li role="none"><a href="#portfolio" role="menuitem">Portfolio</a></li>
-                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
-            </ul>
-            
-            <button class="theme-toggle" 
-                    id="theme-toggle" 
-                    aria-label="Toggle dark mode"
-                    title="Toggle dark mode">
-                <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
-                    <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.66 15.66L14.24 14.24M5.76 5.76L4.34 4.34M15.66 4.34L14.24 5.76M5.76 14.24L4.34 15.66" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-                <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
-    
-    <main id="main-content">
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
         
-        <!-- Hero Section -->
-        <section class="hero" id="hero">
-            <div class="hero-decoration"></div>
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="hero-title">
-                            <span class="hello">Hello, I'm</span>
-                            <span class="name">Aditya Chavan</span>
-                        </h1>
-                        <p class="hero-subtitle">Freelance Software Tester</p>
-                        
-                        <div class="hero-location">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M8 0C5.243 0 3 2.243 3 5c0 3.188 4.5 10 5 11 .5-1 5-7.813 5-11 0-2.757-2.243-5-5-5zm0 7.5c-1.379 0-2.5-1.121-2.5-2.5S6.621 2.5 8 2.5s2.5 1.121 2.5 2.5S9.379 7.5 8 7.5z" fill="currentColor"/>
-                            </svg>
-                            Bagalkot, India 587103
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Aditya S.C.</span>
+                </h1>
+                <p class="hero-subtitle">Aspiring Developer | Curious Mind | Driven Learner</p>
+                <p class="hero-bio">
+                    I am a passionate learner who loves technology, logic, and creativity. 
+                    I enjoy building projects that connect design and functionality, 
+                    constantly exploring new tools and techniques to solve real-world problems. 
+                    Currently strengthening my technical foundation while preparing for engineering entrance exams.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="viewResumeBtn">
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        View Resume
+                    </button>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            
+            <div class="hero-image fade-in">
+                <div class="image-wrapper">
+                    <img src="profile.png" alt="Aditya S.C. - Profile Picture" loading="lazy">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <p>
+                        I am <strong>Aditya S.C.</strong>, a passionate learner who loves technology, logic, and creativity. 
+                        I enjoy building projects that connect design and functionality. My focus is on developing technical 
+                        depth while exploring creative problem-solving through coding, design, and continuous learning.
+                    </p>
+                    <p>
+                        With a strong foundation in programming languages like Python, Java, and web technologies, 
+                        I am constantly working on personal projects to sharpen my skills. I believe in learning by doing 
+                        and am always eager to take on new challenges that push my boundaries.
+                    </p>
+                </div>
+                
+                <div class="contact-cards animate-on-scroll">
+                    <div class="contact-card">
+                        <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <div class="card-content">
+                            <h3>Phone</h3>
+                            <a href="tel:+919972942264">+91 9972942264</a>
                         </div>
-                        
-                        <p class="hero-summary">
-                            Dynamic freelancer with a proven track record in performance testing and critical thinking. Successfully identified and reported bugs, enhancing software quality for previous clients. Skilled in test planning and regression testing, I leverage my problem-solving abilities to deliver robust solutions that meet client needs and exceed expectations.
+                    </div>
+                    
+                    <div class="contact-card">
+                        <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <div class="card-content">
+                            <h3>Email</h3>
+                            <a href="mailto:adityachavan6363@gmail.com">adityachavan6363@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        <div class="card-content">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/AdityaANKS" target="_blank" rel="noopener noreferrer">AdityaANKS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid animate-on-scroll">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">React (Basics)</span>
+                        <span class="skill-percent">60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="60"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Regression Testing</span>
+                        <span class="skill-percent">65%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="65"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Problem Solving</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2024</span>
+                        <h3>Pre-University (Science Stream)</h3>
+                        <h4>PU College</h4>
+                        <p>
+                            Completed Pre-University education with a focus on Physics, Chemistry, and Mathematics. 
+                            Built a strong foundation in analytical thinking and scientific methodology.
                         </p>
-                        
-                        <div class="hero-contact">
-                            <a href="tel:+919972942264" class="contact-link">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                    <path d="M3.62 7.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V17c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
-                                </svg>
-                                +91 9972942264
-                            </a>
-                            <a href="mailto:adityachavan6363@gmail.com" class="contact-link">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                    <path d="M16 2H2C.9 2 0 2.9 0 4v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 4l-7 4.5L2 6V4l7 4.5L16 4v2z" fill="currentColor"/>
-                                </svg>
-                                adityachavan6363@gmail.com
-                            </a>
-                            <a href="https://github.com/AdityaANKS" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               class="contact-link"
-                               aria-label="Visit Aditya's GitHub profile (opens in new tab)">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C4.03 0 0 4.03 0 9c0 3.98 2.58 7.35 6.16 8.54.45.08.62-.19.62-.43 0-.21-.01-.77-.01-1.51-2.51.55-3.04-1.21-3.04-1.21-.41-1.04-1-1.32-1-1.32-.82-.56.06-.55.06-.55.91.06 1.39.93 1.39.93.8 1.38 2.11.98 2.62.75.08-.58.31-.98.57-1.2-2-.23-4.1-1-4.1-4.45 0-.98.35-1.79.93-2.42-.09-.23-.4-1.14.09-2.38 0 0 .76-.24 2.48.92.72-.2 1.49-.3 2.26-.3.77 0 1.54.1 2.26.3 1.72-1.16 2.48-.92 2.48-.92.49 1.24.18 2.15.09 2.38.58.63.93 1.44.93 2.42 0 3.46-2.1 4.22-4.11 4.44.32.28.61.83.61 1.67 0 1.2-.01 2.17-.01 2.47 0 .24.17.52.62.43C15.42 16.35 18 12.98 18 9c0-4.97-4.03-9-9-9z" fill="currentColor"/>
-                                </svg>
-                                GitHub
-                            </a>
-                        </div>
-                        
-                        <div class="hero-cta">
-                            <a href="resume.pdf" download="Aditya_Chavan_Resume.pdf" class="btn btn-primary">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                    <path d="M14 6h-3V1H7v5H4l5 5 5-5zM3 15v2h12v-2H3z" fill="currentColor"/>
-                                </svg>
-                                Download Resume (PDF)
-                            </a>
-                            <a href="resume.jpg" download="Aditya_Chavan_Resume.jpg" class="btn btn-secondary">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                    <path d="M14 6h-3V1H7v5H4l5 5 5-5zM3 15v2h12v-2H3z" fill="currentColor"/>
-                                </svg>
-                                Download Resume (JPG)
-                            </a>
-                            <a href="#contact" class="btn btn-outline">Contact Me</a>
-                        </div>
-                    </div>
-                    
-                    <div class="hero-image">
-                        <div class="profile-image-wrapper">
-                            <img src="assets/images/profile.png" 
-                                 alt="Professional headshot of Aditya Chavan, Freelance Software Tester" 
-                                 class="profile-image"
-                                 width="300"
-                                 height="300">
-                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <!-- Skills Section -->
-        <section class="section" id="skills">
-            <div class="container">
-                <h2 class="section-title">Technical Skills</h2>
-                <p class="section-subtitle">Expertise in software testing and quality assurance</p>
                 
-                <div class="skills-grid">
-                    <!-- Skills will be dynamically generated by JavaScript -->
-                </div>
-            </div>
-        </section>
-        
-        <!-- Experience Section -->
-        <section class="section section-alt" id="experience">
-            <div class="container">
-                <h2 class="section-title">Work Experience</h2>
-                <p class="section-subtitle">Professional journey and achievements</p>
-                
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <div>
-                                    <h3 class="timeline-title">Freelancer</h3>
-                                    <p class="timeline-company">Employer, Bagalkot</p>
-                                </div>
-                                <span class="timeline-date">January 2024 - 2025</span>
-                            </div>
-                            
-                            <button class="timeline-toggle" 
-                                    aria-expanded="false" 
-                                    aria-controls="exp-details-1"
-                                    data-toggle="experience">
-                                <span>Show details</span>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            
-                            <div class="timeline-details" id="exp-details-1">
-                                <ul>
-                                    <li>Identified and documented critical bugs across multiple client projects, improving software quality and user experience</li>
-                                    <li>Conducted comprehensive regression testing to ensure stability after updates and new feature deployments</li>
-                                    <li>Performed performance testing to optimize application speed and resource utilization</li>
-                                    <li>Collaborated with development teams to provide detailed bug reports and reproduction steps</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Education Section -->
-        <section class="section" id="education">
-            <div class="container">
-                <h2 class="section-title">Education</h2>
-                <p class="section-subtitle">Academic background and qualifications</p>
-                
-                <div class="education-grid">
-                    <div class="education-card">
-                        <div class="education-icon">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                <path d="M24 2L2 14l22 12 18-9.82V34h4V12L24 2zm0 23.48L7.72 14 24 4.52 40.28 14 24 25.48zM12 21.36v8.62c0 4.94 5.37 8.02 12 8.02s12-3.08 12-8.02v-8.62l-12 6.56-12-6.56z" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <h3 class="education-degree">High School Diploma in Computer Science</h3>
-                        <p class="education-institution">
-                            <a href="#" class="institution-link">Basaveshwara Veerashaiva Vidya Vardhak Sangha at Vidyagiri, Bagalkot</a>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3>JEE Preparation</h3>
+                        <h4>Self-Study & Coaching</h4>
+                        <p>
+                            Currently preparing for JEE (Joint Entrance Examination) to strengthen technical foundation 
+                            and pursue engineering. Focusing on advanced mathematics, physics, and problem-solving skills.
                         </p>
-                        <p class="education-date">Expected May 2026</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Ongoing</span>
+                        <h3>Self-Taught Developer</h3>
+                        <h4>Online Learning & Projects</h4>
+                        <p>
+                            Continuously learning web development, programming languages, and software engineering 
+                            principles through online courses, documentation, and hands-on project building.
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <!-- Languages Section -->
-        <section class="section section-alt" id="languages">
-            <div class="container">
-                <h2 class="section-title">Languages</h2>
-                <p class="section-subtitle">Proficiency in multiple languages</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Projects</h2>
+            <div class="experience-grid">
+                <div class="experience-card animate-on-scroll">
+                    <div class="card-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Web Development Projects</h3>
+                    <p class="experience-period">2023 - Present</p>
+                    <p>
+                        Built and deployed multiple personal projects using HTML, CSS, and JavaScript. 
+                        Focused on creating responsive, accessible, and user-friendly web applications 
+                        with modern design principles and interactive features.
+                    </p>
+                </div>
                 
-                <div class="languages-grid">
-                    <div class="language-item" data-animate>
-                        <div class="language-header">
-                            <span class="language-name">English</span>
-                            <span class="language-percent">90%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" data-percent="90"></div>
+                <div class="experience-card animate-on-scroll">
+                    <div class="card-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>UI/UX Development</h3>
+                    <p class="experience-period">2023 - Present</p>
+                    <p>
+                        Developed responsive UI components and learned how to optimize user experience 
+                        through careful attention to layout, color theory, typography, and interaction design. 
+                        Implemented accessibility best practices across all projects.
+                    </p>
+                </div>
+                
+                <div class="experience-card animate-on-scroll">
+                    <div class="card-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Problem Solving & DSA</h3>
+                    <p class="experience-period">2023 - Present</p>
+                    <p>
+                        Actively practicing data structures and algorithms using Python and Java. 
+                        Solving coding challenges on various platforms to improve logical thinking 
+                        and algorithmic problem-solving abilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card animate-on-scroll">
+                    <div class="portfolio-image">
+                        <img src="project1.jpg" alt="Personal Portfolio Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="https://github.com/AdityaANKS" target="_blank" rel="noopener noreferrer" class="btn btn-small">View Project</a>
                         </div>
                     </div>
-                    
-                    <div class="language-item" data-animate>
-                        <div class="language-header">
-                            <span class="language-name">Kannada</span>
-                            <span class="language-percent">100%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" data-percent="100"></div>
+                    <div class="portfolio-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A responsive portfolio built with HTML, CSS, and JavaScript showcasing projects and skills with modern animations.</p>
+                        <div class="portfolio-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
                         </div>
                     </div>
-                    
-                    <div class="language-item" data-animate>
-                        <div class="language-header">
-                            <span class="language-name">Hindi</span>
-                            <span class="language-percent">85%</span>
+                </div>
+                
+                <div class="portfolio-card animate-on-scroll">
+                    <div class="portfolio-image">
+                        <img src="project2.jpg" alt="Interactive Web Components" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="https://github.com/AdityaANKS" target="_blank" rel="noopener noreferrer" class="btn btn-small">View Project</a>
                         </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" data-percent="85"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Interactive Web Components</h3>
+                        <p>Collection of reusable UI components including modals, carousels, and form validators built with vanilla JavaScript.</p>
+                        <div class="portfolio-tags">
+                            <span>JavaScript</span>
+                            <span>CSS3</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card animate-on-scroll">
+                    <div class="portfolio-image">
+                        <img src="project3.jpg" alt="Python Automation Scripts" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="https://github.com/AdityaANKS" target="_blank" rel="noopener noreferrer" class="btn btn-small">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Python Automation Scripts</h3>
+                        <p>Various Python scripts for task automation, data processing, and file management to improve productivity.</p>
+                        <div class="portfolio-tags">
+                            <span>Python</span>
+                            <span>Automation</span>
+                            <span>Scripting</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card animate-on-scroll">
+                    <div class="portfolio-image">
+                        <img src="project4.jpg" alt="Responsive Landing Pages" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="https://github.com/AdityaANKS" target="_blank" rel="noopener noreferrer" class="btn btn-small">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Responsive Landing Pages</h3>
+                        <p>Modern landing page designs with smooth animations, optimized performance, and mobile-first approach.</p>
+                        <div class="portfolio-tags">
+                            <span>HTML5</span>
+                            <span>CSS Grid</span>
+                            <span>Flexbox</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <!-- Portfolio Section -->
-        <section class="section" id="portfolio">
-            <div class="container">
-                <h2 class="section-title">Portfolio</h2>
-                <p class="section-subtitle">Featured projects and testing samples</p>
-                
-                <div class="portfolio-filters" role="tablist" aria-label="Filter projects">
-                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
-                    <button class="filter-btn" data-filter="testing" role="tab" aria-selected="false">Testing</button>
-                    <button class="filter-btn" data-filter="automation" role="tab" aria-selected="false">Automation</button>
-                    <button class="filter-btn" data-filter="other" role="tab" aria-selected="false">Other</button>
-                </div>
-                
-                <div class="portfolio-grid" role="tabpanel">
-                    <!-- Portfolio items will be dynamically generated by JavaScript -->
-                </div>
-            </div>
-        </section>
-        
-        <!-- Contact Section -->
-        <section class="section section-alt" id="contact">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's discuss your testing needs</p>
-                
-                <div class="contact-wrapper">
-                    <div class="contact-info">
-                        <h3>Contact Information</h3>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
-                                </svg>
-                                <div>
-                                    <strong>Phone</strong>
-                                    <a href="tel:+919972942264">+91 9972942264</a>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-item">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
-                                </svg>
-                                <div>
-                                    <strong>Email</strong>
-                                    <a href="mailto:adityachavan6363@gmail.com">adityachavan6363@gmail.com</a>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-item">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
-                                </svg>
-                                <div>
-                                    <strong>Location</strong>
-                                    <span>Bagalkot, India 587103</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <form class="contact-form" id="contact-form" novalidate>
-                        <!-- Honeypot field for spam prevention -->
-                        <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
-                        
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form class="contact-form" id="contactForm" novalidate>
                         <div class="form-group">
                             <label for="name">Name *</label>
-                            <input type="text" 
-                                   id="name" 
-                                   name="name" 
-                                   required 
-                                   autocomplete="name"
-                                   aria-required="true">
-                            <span class="error-message" role="alert"></span>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                            <span class="error-message" id="nameError"></span>
                         </div>
                         
                         <div class="form-group">
                             <label for="email">Email *</label>
-                            <input type="email" 
-                                   id="email" 
-                                   name="email" 
-                                   required 
-                                   autocomplete="email"
-                                   aria-required="true">
-                            <span class="error-message" role="alert"></span>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required aria-required="true">
+                            <span class="error-message" id="subjectError"></span>
                         </div>
                         
                         <div class="form-group">
                             <label for="message">Message *</label>
-                            <textarea id="message" 
-                                      name="message" 
-                                      rows="5" 
-                                      required
-                                      aria-required="true"></textarea>
-                            <span class="error-message" role="alert"></span>
+                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                            <span class="error-message" id="messageError"></span>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary">
-                            <span>Send Message</span>
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                <path d="M1.01 1l16.98 8L1.01 17 1 11l12-2-12-2z" fill="currentColor"/>
-                            </svg>
-                        </button>
-                        
-                        <p class="form-note">
-                            Or email me directly at 
-                            <a href="mailto:adityachavan6363@gmail.com">adityachavan6363@gmail.com</a>
-                        </p>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div class="success-message" id="successMessage">
+                            ✓ Message sent successfully! I'll get back to you soon.
+                        </div>
                     </form>
                 </div>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Aditya Chavan. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#hero">Back to top</a>
-                    <button id="print-resume" class="footer-link-btn">Print Resume</button>
+                
+                <div class="contact-info animate-on-scroll">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+919972942264">+91 9972942264</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:adityachavan6363@gmail.com">adityachavan6363@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/AdityaANKS" target="_blank" rel="noopener noreferrer">github.com/AdityaANKS</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
-    
-    <!-- Toast Container -->
-    <div class="toast-container" id="toast-container" role="status" aria-live="polite" aria-atomic="true"></div>
-    
-    <!-- Modal Container -->
-    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
-        <div class="modal-overlay" data-close-modal></div>
+    </section>
+
+    <!-- Resume Modal -->
+    <div class="modal" id="resumeModal" aria-modal="true" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-overlay" id="modalOverlay"></div>
         <div class="modal-container">
-            <div class="modal-header">
-                <h3 class="modal-title" id="modal-title">Modal Title</h3>
-                <button class="modal-close" data-close-modal aria-label="Close modal">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </button>
+            <button class="modal-close" id="modalClose" aria-label="Close resume modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            
+            <h2 id="modalTitle">Resume</h2>
+            
+            <div class="resume-preview">
+                <img src="resume-preview.jpg" alt="Resume preview thumbnail" loading="lazy">
             </div>
-            <div class="modal-body" id="modal-body">
-                <!-- Content will be injected here -->
+            
+            <div class="modal-buttons">
+                <a href="resume.pdf" download="Aditya_SC_Resume.pdf" class="btn btn-primary">
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download PDF
+                </a>
+                <a href="resume.jpg" download="Aditya_SC_Resume.jpg" class="btn btn-secondary">
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download JPG
+                </a>
             </div>
         </div>
     </div>
-    
-    <script src="js/main.js" defer></script>
-    
-    <!-- Analytics placeholder (privacy-friendly) -->
-    <!-- 
-    <script>
-        // Insert your privacy-friendly analytics here (e.g., Plausible, Fathom, Simple Analytics)
-        // Example: <script defer data-domain="adityachavan.dev" src="https://plausible.io/js/script.js"></script>
-    </script>
-    -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2025 Aditya S.C. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/AdityaANKS" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
